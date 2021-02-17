@@ -1,0 +1,14 @@
+.card{
+    max-width:250px;
+    margin: 20px;
+}
+
+.card img{
+    width:100%;
+    height:auto;
+}
+
+
+.logo img{
+    max-width:100px;
+}

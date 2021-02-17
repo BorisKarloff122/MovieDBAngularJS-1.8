@@ -1,0 +1,10 @@
+@import "components/card/card.component.css";
+
+card{
+  display:flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width:1500px;
+  margin:0 auto;
+  flex-wrap:wrap;
+}
