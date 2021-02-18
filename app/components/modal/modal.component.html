@@ -1,0 +1,22 @@
+<div class="modal" ng-if="movie" ng-class="openModal? 'show': ''" ng-scope="movie_modal">
+    <div class="backposter" style="background:url({{movie.poster_path | imgTemplate }});"></div>
+    <div class="modal_container">
+       <div class="img_block left">
+            <img src="{{movie.poster_path | imgTemplate}}">
+        </div>
+        <div class="right">
+            <div class="header">
+                {{movie.title}}
+            </div>
+            <div class="row">
+                <div class="text vote_avarage">
+                    {{movie.vote_avarage}}
+                </div>
+                <div class="text vote_count">
+                    {{movie.vote_count}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

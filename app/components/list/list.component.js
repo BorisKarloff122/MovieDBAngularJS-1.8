@@ -1,4 +1,4 @@
-const list =angular.module('list', []);
+const list = angular.module('list', []);
 
 list.component('listBlock', {
    templateUrl: 'components/list/list.component.html',
