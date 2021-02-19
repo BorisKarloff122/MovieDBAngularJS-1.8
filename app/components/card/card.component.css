@@ -1,6 +1,7 @@
 .card{
     max-width:250px;
     margin: 20px;
+    cursor: pointer;
 }
 
 .card img{
@@ -8,7 +9,11 @@
     height:auto;
 }
 
-
-.logo img{
-    max-width:100px;
+card{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width:1500px;
+    margin:0 auto;
+    flex-wrap:wrap;
 }

@@ -1,10 +1,17 @@
 @import "components/card/card.component.css";
+@import "components/modal/modal.component.css";
+@import "components/header/header.component.css";
 
-card{
-  display:flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width:1500px;
+body{
+  margin:0;
+  padding-top:120px;
+  font-family: SansSerif;
+  font-size:14px;
+  color:#333;
+}
+
+.container{
+  max-width:1200px;
   margin:0 auto;
-  flex-wrap:wrap;
+
 }
