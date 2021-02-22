@@ -84,3 +84,8 @@
     align-items:center;
     justify-content: center;
 }
+
+
+.fav{
+    cursor: pointer;
+}
