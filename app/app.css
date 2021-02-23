@@ -1,6 +1,8 @@
 @import "components/card/card.component.css";
 @import "components/modal/modal.component.css";
 @import "components/header/header.component.css";
+@import "components/account/account.component.css";
+
 
 body{
   margin:0;

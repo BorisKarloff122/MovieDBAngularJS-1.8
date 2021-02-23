@@ -76,9 +76,6 @@ function modalCtrl($scope, dataService) {
 
 
 cards.controller('switchController', function ($scope, dataService) {
-
-
-
     $scope.$on('moviesChange', function (event, data) {
         $scope.findIndex(data);
         $scope.movies = data;
@@ -101,7 +98,6 @@ cards.controller('switchController', function ($scope, dataService) {
                 $scope.dataService.movie = $scope.dataService.movies[$scope.indexVar - 1];
             }
             $scope.$emit('prevChange', dataService.movie);
-
         };
     });
 
@@ -137,10 +133,7 @@ cards.controller('switchController', function ($scope, dataService) {
         $scope.indexVar = data.indexOf(data.find((entry) => entry.title === title));
         $scope.testFavorites();
     };
-
-
 });
-
 
 cards.filter('imgTemplate', function () {
     return function (text) {

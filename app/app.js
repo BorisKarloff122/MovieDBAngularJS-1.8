@@ -1,19 +1,21 @@
 angular.module('myApp', [
+    'account',
     'cards',
     'list',
     'header',
-    'footer'
-]).config(function($routeProvider) {
-    $routeProvider.when('/account',
-        {
-            templateUrl: '',
-            controller: 'QuestionController'
-        });
-    $routeProvider.when('/',
-        {
-            templateUrl: '',
-            controller: 'AnswerController'
-        });
-});
+    'footer',
+    'ngRoute',
+]);
 
 
+angular.module('myApp').config(['$routeProvider',
+    function ($routeProvider) {
+        $routeProvider.when('/',
+            {
+                template:'<list-block></list-block>',
+
+            }).when('/account',
+            {
+                template:'<account></account>',
+            });
+    }]);

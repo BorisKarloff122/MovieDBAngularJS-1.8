@@ -1,0 +1,23 @@
+.movieBlock{
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:20px;
+    font-weight:bold;
+}
+
+.imgBlock{
+    margin-right:20px;
+}
+
+
+.left_block{
+    max-width:850px;
+}

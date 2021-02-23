@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div ng-if="savedMovies !== []"  class="container">
+
+    <div class="movieBlock" ng-repeat="movie in savedMovies track by $index">
+            <div class="imgBlock">
+                <img alt="" src="{{movie.poster_path | imgTemplate}}">
+            </div>
+        <div class="left_block">
+            <div class="row">
+                <div class="name">{{movie.title}}</div>
+                <div class="buttonBlock">
+                    <button ng-click="removeFromFavorites($index)">Remove From Favorites</button>
+                </div>
+            </div>
+            <div class="overview">
+                {{movie.overview}}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container" ng-if="savedMovies === []">
+    No favorites!
+</div>
